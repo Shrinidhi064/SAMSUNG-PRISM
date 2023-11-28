@@ -1,0 +1,229 @@
+Function,Function description,Unit test case ,Positive/Negative
+"add_numbers(a, b)
+   ",Addition of two numbers,"result = add_numbers(3, 5)\nassertEqual(result, 8)",Positive 
+"add_numbers(a, b)
+   ",Addition of two numbers,"result = add_numbers(-3, -5)\nassertEqual(result, -8)",Positive 
+"add_numbers(a, b)
+   ",Addition of two numbers,"result = add_numbers(5, -3)\nassertEqual(result, 2)",Positive 
+"add_numbers(a, b)
+   ",Addition of two numbers,"result = add_numbers(7, 0)\nassertEqual(result, 7)
+",Positive 
+"subtract_numbers(a, b)
+",Difference of two numbers,"result = subtract_numbers(8, 3)\nassertEqual(result, 5)",Positive 
+"subtract_numbers(a, b)
+",Difference of two numbers,"result = subtract_numbers(-5, -2)\nassertEqual(result, -3)",Positive 
+"subtract_numbers(a, b)
+",Difference of two numbers,"result = subtract_numbers(7, -3)\nassertEqual(result, 10)",Positive 
+"subtract_numbers(a, b)
+",Difference of two numbers,"result = subtract_numbers(5, 0)\nassertEqual(result, 5)
+",Positive 
+"multiply_numbers(a, b)
+    
+",Product of two numbers,"result = multiply_numbers(3, 5)\nassertEqual(result, 15)
+",Positive 
+"multiply_numbers(a, b)
+    
+",Product of two numbers,"result = multiply_numbers(-3, -4)\nassertEqual(result, 12)",Positive 
+"multiply_numbers(a, b)
+    
+",Product of two numbers,"result = multiply_numbers(7, -2)\nassertEqual(result, -14)
+",Positive 
+"multiply_numbers(a, b)
+    
+",Product of two numbers,"result = multiply_numbers(5, 0)\nassertEqual(result, 0)
+",Positive 
+"divide_numbers(a, b)
+",Division of two numbers,"result = divide_numbers(10, 2)\nassertEqual(result, 5.0)",Positive 
+"divide_numbers(a, b)
+",Division of two numbers,"result = divide_numbers(-8, -2)\nassertEqual(result, 4.0)
+",Positive 
+"divide_numbers(a, b)
+",Division of two numbers,"result = divide_numbers(9, -3)\nassertEqual(result, -3.0)",Positive 
+"divide_numbers(a, b)
+",Division of two numbers,"result = divide_numbers(5, 0)\nassertEqual(result, ""Cannot divide by zero"")
+",Positive 
+"find_maximum(numbers)
+",Maximum of a list of numbers,"result = find_maximum([4, 9, 2, 7, 5])\nassertEqual(result, 9)",Positive 
+"find_maximum(numbers)
+",Maximum of a list of numbers,"result = find_maximum([-3, -8, -2, -7, -1])\nassertEqual(result, -1)",Positive 
+"find_maximum(numbers)
+",Maximum of a list of numbers,"result = find_maximum([-2, 5, 0, -8, 10])\nassertEqual(result, 10)",Positive 
+"find_maximum(numbers)
+",Maximum of a list of numbers,result = find_maximum([])\nassertIsNone(result),Positive 
+"find_minimum(numbers)
+
+",Minimum of a list of numbers,"result = find_minimum([4, 9, 2, 7, 5])\nassertEqual(result, 2)
+",Positive 
+"find_minimum(numbers)
+
+",Minimum of a list of numbers,"result = find_minimum([-3, -8, -2, -7, -1])\nassertEqual(result, -8)",Positive 
+"find_minimum(numbers)
+
+",Minimum of a list of numbers,"result = find_minimum([-2, 5, 0, -8, 10])\nassertEqual(result, -8)",Positive 
+"find_minimum(numbers)
+
+",Minimum of a list of numbers,result = find_minimum([])\nassertIsNone(result),Positive 
+"square_number(x)
+",Square of a given number,"result = square_number(5)\nassertEqual(result, 25)",Positive 
+"square_number(x)
+",Square of a given number,"result = square_number(-4)\nassertEqual(result, 16)",Positive 
+"square_number(x)
+",Square of a given number,"result = square_number(0)\nassertEqual(result, 0)",Positive 
+"square_number(x)
+",Square of a given number,"result = square_number(100)\nassertEqual(result, 10000)",Positive 
+"is_even(number)
+
+",Odd and even number,result = is_even(4)\nassertTrue(result),Positive 
+"is_even(number)
+
+",Odd and even number,result = is_even(7)\nassertFalse(result),Positive 
+"is_even(number)
+
+",Odd and even number,result = is_even(0)\nassertTrue(result),Positive 
+"is_even(number)
+
+",Odd and even number,result = is_even(-6)\nassertTrue(result),Positive 
+"reverse_string(input_str)
+
+",Reversal of a string,"result = reverse_string(""Hello, World!"")\nassertEqual(result, ""!dlroW ,olleH"")",Positive 
+"reverse_string(input_str)
+
+",Reversal of a string,"result = reverse_string("""")\nassertEqual(result, """")
+",Positive 
+"reverse_string(input_str)
+
+",Reversal of a string,"result = reverse_string(""A"")\nassertEqual(result, ""A"")",Positive 
+"reverse_string(input_str)
+
+",Reversal of a string,"result = reverse_string(""Olá, Mundo!"")\nassertEqual(result, ""!odnuM ,álO"")",Positive 
+"sum_list(numbers)
+",Sum of a given list of numbers,"result = sum_list([1, 2, 3, 4, 5])\nassertEqual(result, 15)",Positive 
+"sum_list(numbers)
+",Sum of a given list of numbers,"result = sum_list([-1, -2, -3, -4, -5])\nassertEqual(result, -15)
+",Positive 
+"sum_list(numbers)
+",Sum of a given list of numbers,"result = sum_list([1, -2, 3, -4, 5])\nassertEqual(result, 3)
+",Positive 
+"sum_list(numbers)
+",Sum of a given list of numbers,"result = sum_list([])\nassertEqual(result, 0)",Positive 
+"
+calculate_factorial(n)",Factorial of a number,"assertEqual(calculate_factorial(0), 1)",Positive 
+"
+calculate_factorial(n)",Factorial of a number,"assertEqual(calculate_factorial(5), 120)",Positive 
+"
+calculate_factorial(n)",Factorial of a number,"assertEqual(calculate_factorial(3), 6)",Positive 
+"
+calculate_factorial(n)",Factorial of a number,"assertEqual(calculate_factorial(20), 2432902008176640000)",Positive 
+is_perfect_number(n),Perfect Number,"result = is_perfect_no(28)\nassertEqual(result, True)
+",Positive
+is_perfect_number(n),Perfect Number,"result = is_perfect_no(496)\nassertEqual(result, True)
+",Positive
+is_perfect_number(n),Perfect Number,"result = is_perfect_no(7)\nassertEqual(result, False)
+",Negative
+is_perfect_number(n),Perfect Number,"result = is_perfect_no(-6)\nassertEqual(result, False)
+",Negative
+"linear_search(arr, target)",Linear Search,"
+result = linear_search([3,5,1,9,2], 5)\nassertEqual(result, 1)",Positive
+"linear_search(arr, target)",Linear Search,"
+result = linear_search([3,5,1,9,2], 3)\nassertEqual(result, 1)",Positive
+"linear_search(arr, target)",Linear Search,"
+result = linear_search([3,5,1,9,2], -1)\nassertEqual(result, -1)",Negative
+"linear_search(arr, target)",Linear Search,"
+result = linear_search([], 5)\nassertEqual(result, -1)",Negative
+"binary_search(arr, target)",Binary search,"
+result = binary_search([3,5,1,9,2], 5)\nassertEqual(result, 1)",Positive
+"binary_search(arr, target)",Binary search,"
+result = binary_search([3,5,1,9,2], 3)\nassertEqual(result, 1)",Positive
+"binary_search(arr, target)",Binary search,"
+result = binary_search([3,5,1,9,2], -1)\nassertEqual(result, -1)",Negative
+"binary_search(arr, target)",Binary search,"
+result = binary_search([], 5)\nassertEqual(result, -1)",Negative
+generate_fibonacci_sequence(n),Fibonacci of a number,"result = generate_fibonacci_sequence(5)\nassertEqual(result, [0, 1, 1, 2, 3])",Positive
+generate_fibonacci_sequence(n),Fibonacci of a number,"result = generate_fibonacci_sequence(3)\nassertEqual(result, [0, 1, 1])",Positive
+generate_fibonacci_sequence(n),Fibonacci of a number,"result = generate_fibonacci_sequence(0)\nassertEqual(result, [])",Negative
+generate_fibonacci_sequence(n),Fibonacci of a number,"result = generate_fibonacci_sequence(-1)\nassertEqual(result, None)",Negative
+is_prime(n),Check for prime number,"
+result = is_prime(2)\nassertEqual(result, True)
+",Positive
+is_prime(n),Check for prime number,"
+result = is_prime(5)\nassertEqual(result, True)
+",Positive
+is_prime(n),Check for prime number,"
+result = is_prime(1)\nassertEqual(result, False)
+",Negative
+is_prime(n),Check for prime number,"
+result = is_prime(6)\nassertEqual(result, False)
+",Negative
+insertion_sort(arr),Insertion Sort,"
+insertion_sort([1,2,3,4,5])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+insertion_sort(arr),Insertion Sort,"
+insertion_sort([5,4,3,2,1])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+insertion_sort(arr),Insertion Sort,"
+insertion_sort([])\nassertEqual(arr, [])
+",Negative
+insertion_sort(arr),Insertion Sort,"
+insertion_sort([3,1,4,2,1])\nassertEqual(arr, [1, 1,2,3,4])
+",Negative
+bubble_sort(arr),Bubble Sort,"
+bubble_sort([1,2,3,4,5])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+bubble_sort(arr),Bubble Sort,"
+bubble_sort([5,4,3,2,1])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+bubble_sort(arr),Bubble Sort,"
+bubble_sort([])\nassertEqual(arr, [])
+",Negative
+bubble_sort(arr),Bubble Sort,"
+bubble_sort([3,1,4,2,1])\nassertEqual(arr, [1, 1,2,3,4])
+",Negative
+selection_sort(arr),Selection Sort,"
+selection_sort([1,2,3,4,5])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+selection_sort(arr),Selection Sort,"
+selection_sort([5,4,3,2,1])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+selection_sort(arr),Selection Sort,"
+selection_sort([])\nassertEqual(arr, [])
+",Negative
+selection_sort(arr),Selection Sort,"
+selection_sort([3,1,4,2,1])\nassertEqual(arr, [1, 1,2,3,4])
+",Negative
+merge_sort(arr),Merge Sort,"
+merge_sort([1,2,3,4,5])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+merge_sort(arr),Merge Sort,"
+merge_sort([5,4,3,2,1])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+merge_sort(arr),Merge Sort,"
+merge_sort([])\nassertEqual(arr, [])
+",Negative
+merge_sort(arr),Merge Sort,"
+merge_sort([3,1,4,2,1])\nassertEqual(arr, [1, 1,2,3,4])
+",Negative
+quick_sort(arr),Quick Sort,"
+quick_sort([1,2,3,4,5])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+quick_sort(arr),Quick Sort,"
+quick_sort([5,4,3,2,1])\nassertEqual(arr, [1, 2, 3, 4, 5])
+",Positive
+quick_sort(arr),Quick Sort,"
+quick_sort([])\nassertEqual(arr, [])
+",Negative
+quick_sort(arr),Quick Sort,"
+quick_sort([3,1,4,2,1])\nassertEqual(arr, [1, 1,2,3,4])
+",Negative
+calculate_square_root(x),Square root of a number,"
+result = calculate_square_root(25)\nassertEqual(result, 5)
+",Positive
+calculate_square_root(x),Square root of a number,"
+result = calculate_square_root(10)\nassertAlmostEqual(result, 3.16227766016838)
+",Positive
+calculate_square_root(x),Square root of a number,"
+result = calculate_square_root(-16)\nassertRaises(Exception, lambda: calculate_square_root(x))
+
+",Negative
+calculate_square_root(x),Square root of a number,"
+result = calculate_square_root(0)\nassertEqual(result, 0)
+",Negative
